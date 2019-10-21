@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> </link>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript">
+        $(document).keypress(function (e) {
+            if (e.which == 13 || event.keyCode == 13){
+                myfunc();}});
+    </script>
+</head>
+<body>
+    <div id="vcontainer">
+        <div id="box1">
+            <h1 id="titleName">Welcome to my game!</h1>
+            <h2 id="subtitleName">Type 'next' to start</h2>
+        </div>
+        <div id="box2">
+            <p id="gametext">Make sure that the text field is in focus to play the game. If it is not in focus, then the text field will turn gray until focus is returned. Type 'next' to continue"</p>
+        </div>
+        <div id="box3">
+            <p><input type="text" autofocus spellcheck="false" id="parsebox"> </input></p>
+        </div>
+    </div>
+</body>
+</html>

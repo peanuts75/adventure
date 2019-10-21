@@ -1,0 +1,84 @@
+@font-face {
+    font-family:"pixelate regular";
+    src: url("sf-pixelate.regular.ttf");
+}
+
+*{
+    font-family:"pixelate regular";
+}
+
+html, body{
+    height:100%;
+}
+
+body{
+    margin:0;
+}
+
+h1{
+    text-align:center;
+    font-size:4vh;
+    color:white;
+    margin-top:6vh;
+}
+
+h2{
+    text-align:center;
+    font-size:4vh;
+    color:gray;
+}
+
+p {
+    font-size: 2vh;
+    text-align:center;
+    color:gray;
+}
+
+#vcontainer{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+#box1{
+    height:20vh;
+    width:100%;
+    background-image: linear-gradient(to bottom, #111,#000,#000),linear-gradient(to right, #111,#000,#000),linear-gradient(to left, #111,#000,#000);
+    background-blend-mode: screen;
+}
+
+#box2{
+    height:60vh;
+    width:100%;
+    background-image: linear-gradient(to right, #000,#111,#111),linear-gradient(to left, #000,#111,#111);
+    background-blend-mode: screen;
+    overflow: scroll;
+}
+
+#box3{
+    height:20vh;
+    width:100%;
+    background-image: linear-gradient(to top, #111,#000,#000),linear-gradient(to right, #111,#000,#000),linear-gradient(to left, #111,#000,#000);
+    background-blend-mode: screen;
+}
+
+input[type="text"]{
+    width:90vw;
+    background-color:rgba(255,255,255,0.2);
+    border:none;
+    height:16vh;
+    /* color:gray; */
+    text-align:center;
+    font-size:10vh;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+}
+
+input[type="text"]:focus{
+    background-color:rgba(0,0,0,0);
+    outline:none;
+}
+
+::selection {
+    background: #aaa
+}
