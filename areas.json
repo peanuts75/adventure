@@ -11,19 +11,26 @@
         "back": 0,
         "next": 2,
         "code": {
-            "add": "testItem",
-            "condition": "testItem2",
+            "add": "test item",
+            "remove": "test item 2",
+            "condition": "test item 3",
             "goto": 3
         }
     },
 
     {   "title": "Introductory Zone",
         "subtitle": "Screen 2",
-        "desc": "This zone does not link to the other zones. You are trapped here. (Actually, you can just type 'restart' at any time if you want to go back to the beginning)"
+        "desc": "This zone does not link to the other zones. You are trapped here. (Actually, you can just type 'restart' at any time if you want to go back to the beginning)",
+        "code": {
+            "remove": "testItem"
+        }
     },
     
     {   "title": "How this works",
         "subtitle": "A brief overview",
-        "desc": "This game works by reading from a json file. \n\nThe json file is split into an array of different objects, and each object is an area. These areas have a title, a subtitle and a description as manditory key-value pairs, any others use the key as the input required to access that area and the value is the number of the room that the input will take you to.\n\nNote that these pairs, or links, are area dependent; this means that saying 'next' in one room might have no effect in another room. There are a couple of other inputs that can be used in every room though, and they'll always have the same result regardless of the room you're in when you type."
+        "desc": "This game works by reading from a json file. \n\nThe json file is split into an array of different objects, and each object is an area. These areas have a title, a subtitle and a description as manditory key-value pairs, any others use the key as the input required to access that area and the value is the number of the room that the input will take you to.\n\nNote that these pairs, or links, are area dependent; this means that saying 'next' in one room might have no effect. Feel free to experiment by manipulating the json file, you can easily create your own adventure that way!",
+        "code": {
+            "goto": "0"
+        }
     }
 ]
