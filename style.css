@@ -1,6 +1,6 @@
-@font-face {
+@font-face {                                        
     font-family:"pixelate regular";
-    src: url("sf-pixelate.regular.ttf");
+    src: url("sf-pixelate.regular.ttf"); 
 }
 
 *{
@@ -9,6 +9,7 @@
 
 html, body{
     height:100%;
+    background-color:black;
 }
 
 body{
@@ -43,14 +44,17 @@ p {
 #box1{
     height:20vh;
     width:100%;
-    background-image: linear-gradient(to bottom, #111,#000,#000),linear-gradient(to right, #111,#000,#000),linear-gradient(to left, #111,#000,#000);
+    background-image: linear-gradient(to bottom, #111,#000,#000),
+    linear-gradient(to right, #111,#000,#000),
+    linear-gradient(to left, #111,#000,#000);
     background-blend-mode: screen;
 }
 
 #box2{
     height:60vh;
     width:100%;
-    background-image: linear-gradient(to right, #000,#111,#111),linear-gradient(to left, #000,#111,#111);
+    background-image: linear-gradient(to right, #000,#111,#111),
+    linear-gradient(to left, #000,#111,#111);
     background-blend-mode: screen;
     overflow: scroll;
 }
@@ -58,7 +62,9 @@ p {
 #box3{
     height:20vh;
     width:100%;
-    background-image: linear-gradient(to top, #111,#000,#000),linear-gradient(to right, #111,#000,#000),linear-gradient(to left, #111,#000,#000);
+    background-image: linear-gradient(to top, #111,#000,#000),
+    linear-gradient(to right, #111,#000,#000),
+    linear-gradient(to left, #111,#000,#000);
     background-blend-mode: screen;
 }
 
