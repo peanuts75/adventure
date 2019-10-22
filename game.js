@@ -74,4 +74,6 @@ const myfunc = () => {                                                          
     "add" instantly adds the specified item to the inventory whilst remove does the opposite
     "condition" checks for the specified item and if it is in the inventory (or isn't present) then "goto" will be used
     the room number after goto is the room that the player will be taken to if they reach the conditions or there are no conditions
+    you cannot be forced through multiple redirects; if you 'goto' an area then you will not 'goto' any subsequent areas even if you reach the conditions. 
+    
 */
